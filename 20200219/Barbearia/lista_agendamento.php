@@ -40,6 +40,6 @@
 		}
 		?>
 		</table>
-		<a href="form_agendamento.php"> Novo agendamento </a>
+		<a href="index.php"> Novo agendamento </a>
 	</body>
 </html>

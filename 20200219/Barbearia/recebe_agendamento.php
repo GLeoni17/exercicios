@@ -30,7 +30,7 @@
 	}
 	?>
 	<h4>Agendamento realizado com sucesso!</h4>
-	<a href="form_agendamento.php"> Novo agendamento </a>
+	<a href="index.php"> Novo agendamento </a>
 	<br>
 	<a href="lista_agendamento.php"> Listar agendamentos </a>
 	</body>
