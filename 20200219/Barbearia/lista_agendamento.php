@@ -27,8 +27,7 @@ include("funcoes.php");
 	<body>
 		<table style="width:50%" class="table table-striped">
 		<?php
-				exibe_tabela_xml("agendamentos.xml");
-		}
+				exibe_tabela_xml("agendamentos.xml");S
 		?>
 		</table>
 		<a href="index.php"> Novo agendamento </a>
