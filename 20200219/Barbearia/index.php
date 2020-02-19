@@ -16,7 +16,8 @@
 		<div class="row">
 		<span class="col-md-4"> </span>
 		<div class="col-md-4">
-			<h1>Barbearia do Leoni</h1>
+			<h1>Teste</h1>
+			<h1>Barbearia</h1>
 			<form action="recebe_agendamento.php" class="form-login" method="POST">
 				<input type="text" class="form-control" name="nome" placeholder="Nome...">
 				<br>
