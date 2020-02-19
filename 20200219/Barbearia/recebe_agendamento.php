@@ -1,5 +1,12 @@
+<?php
 
+include("funcoes.php");
 
+verifica_arquivo_existente("agendamentos.xml");
+
+adicionar_agendamento($_POST,"agendamentos.xml");
+
+?>
 <!DOCTYPE html>
 <html>
 

@@ -1,5 +1,7 @@
 <?php
-    $arquivo_xml = simplexml_load_file('agendamentos.xml');
+
+include("funcoes.php");
+
 ?>
 <!DOCTYPE html>
 	<html>
@@ -24,22 +26,20 @@
 		</head>
 	<body>
 		<table style="width:50%" class="table table-striped">
-		<tr>
-			<th>Nome </th>
-			<th>Data </th>
-			<th>Hora </th>
-		</tr>
 		<?php
-		// para cada elemento do vetor $arquivo_xml->agendamento sendo este elemento a variavel $a
-		foreach($arquivo_xml->agendamento as $a){
-			echo "<tr>
-					<td>".$a->nome."</td>
-					<td>".$a->data."</td>
-					<td>".$a->hora."</td>
-				</tr>";
+				exibe_tabela_xml("agendamentos.xml");
 		}
 		?>
 		</table>
 		<a href="index.php"> Novo agendamento </a>
 	</body>
 </html>
+
+<!-- // para cada elemento do vetor $arquivo_xml->agendamento sendo este elemento a variavel $a
+		foreach($arquivo_xml->agendamento as $a){
+			echo "<tr>
+					<td>".$a->nome."</td>
+					<td>".$a->data."</td>
+					<td>".$a->hora."</td>
+				</tr>";
+-->
