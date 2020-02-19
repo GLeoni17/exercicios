@@ -31,7 +31,6 @@ include("funcoes.php");
 		?>
 		</table>
 		<a href="index.php"> Novo agendamento </a>
-		<h3>isso é um teste</h3>
 	</body>
 </html>
 
