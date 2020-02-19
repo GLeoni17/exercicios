@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		Teste
+	<?php
+		echo "Teste";
+	?>
 	</body>
 </html>
