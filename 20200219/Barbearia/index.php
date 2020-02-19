@@ -2,7 +2,7 @@
 <html>
 	<body>
 	<?php
-		echo "Teste";
+		echo "Teste2";
 	?>
 	</body>
 </html>
