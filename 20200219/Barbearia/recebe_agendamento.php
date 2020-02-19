@@ -16,7 +16,18 @@ adicionar_agendamento($_POST,"agendamentos.xml");
 </head>
 
 <body>
-	<?php
+	
+	<h4>Agendamento realizado com sucesso!</h4>
+	<a href="index.php"> Novo agendamento </a>
+	<br>
+	<a href="lista_agendamento.php"> Listar agendamentos </a>
+	</body>
+
+</html>
+
+
+
+<!--<?php
 	if(!file_exists("agendamentos.xml")){
 	$xml = '<?xml version="1.0" encoding="ISO-8859-1"?>';
 	$xml .= '<agendamentos>';
@@ -35,19 +46,7 @@ adicionar_agendamento($_POST,"agendamentos.xml");
 	else{
 		$xml = simplexml_load_file('agendamentos.xml');
 	}
-	?>
-	<h4>Agendamento realizado com sucesso!</h4>
-	<a href="index.php"> Novo agendamento </a>
-	<br>
-	<a href="lista_agendamento.php"> Listar agendamentos </a>
-	</body>
-
-</html>
-
-
-
-
-
+	?>-->
 
 
 <!--<?php
