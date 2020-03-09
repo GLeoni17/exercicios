@@ -3,20 +3,32 @@
     <head>
         <meta charset="utf-8" />
         <script type="text/javascript" src="ex1.js"></script>
+        <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <form name=form>
-            <input type="text" id="nome" placeholder="Nome..." name="nome">
-            <br>
-            <input type="email" id="email" placeholder="Email..." name="email">
-            <br>
-            <input type="radio" id="sexom" name="sexo" value="Masculino">Masculino
-            <br>
-            <input type="radio" id="sexof" name="sexo" value="Feminino">Feminino
-            <br>
-            <input type="date" id="data_nascimento" placeholder="Data de Nascimento..." name="data">
-            <br>
-            <input type="button" onclick="escreve_mensagem(document.form.nome.value, document.form.email.value, document.form.sexo.value, document.form.data.value)" value="Exibir" />
-        </form>
+        <div class="row">
+            <span class="col-md-3"> </span>
+            <div class="col-md-6">
+            <form name=form class="form-login">
+                <input type="text" id="nome" class="form-control" placeholder="Nome..." name="nome">
+                <br>
+                <br>
+                <input type="email" id="email" class="form-control" placeholder="Email..." name="email">
+                <br>
+                <br>
+                Masculino<input type="radio" id="sexom" class="form-login" name="sexo" value="Masculino">
+                <br>
+                Feminino<input type="radio" id="sexof" class="form-login" name="sexo" value="Feminino">
+                <br>
+                <br>
+                <p>Data de Nascimento:</p>
+                <input type="date" id="data_nascimento" class="form-control" name="data">
+                <br>
+                <br>
+                <input type="button" class="btn btn-lg btn-primary btn-block" width="50" onclick="escreve_mensagem(document.form.nome.value, document.form.email.value, document.form.sexo.value, document.form.data.value)" value="Exibir" />
+            </form>
+            </div>
+            <span class="col-md-3"> </span>
+        </div>
     </body>
 </html>
