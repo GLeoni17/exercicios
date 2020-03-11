@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        var verifica_repete=1;
+		var contador_empate=1;
+        function verifica_jogada(valor){
+            if(valor.value!='X' && valor.value!='0' && valor.value!=''){
+              alert('Valor invalido! Insira apenas X e 0.');
+              valor.value='';
+            }
+            if(valor.value==verifica_repete){
+                alert('Esta jogada está repetida!');
+                valor.value='';
+            }
+            verifica_repete=valor.value;
+			contador_empate++;
+        }
+        function verifica_jogo(f){
+            if(f.valor1.value=='X' && f.valor2.value=='X' && f.valor3.value=='X'){ //Testa o X
+                alert('X ganhou!');
+
+            }else if(f.valor4.value=='X' && f.valor5.value=='X' && f.valor6.value=='X'){
+                alert('X ganhou!');
+
+            }else if(f.valor7.value=='X' && f.valor8.value=='X' && f.valor9.value=='X'){
+                alert('X ganhou!');
+
+            }else if(f.valor1.value=='X' && f.valor4.value=='X' && f.valor7.value=='X'){
+                alert('X ganhou!');
+
+            }else if(f.valor2.value=='X' && f.valor5.value=='X' && f.valor8.value=='X'){
+                alert('X ganhou!');
+
+            }else if(f.valor3.value=='X' && f.valor6.value=='X' && f.valor9.value=='X'){
+                alert('X ganhou!');
+
+            }else if(f.valor1.value=='X' && f.valor5.value=='X' && f.valor9.value=='X'){
+                alert('X ganhou!');
+
+            }else if(f.valor3.value=='X' && f.valor5.value=='X' && f.valor7.value=='X'){
+                alert('X ganhou!');
+
+            }else if(f.valor1.value=='0' && f.valor2.value=='0' && f.valor3.value=='0'){ //Testa o 0
+                alert('0 ganhou!');
+
+            }else if(f.valor4.value=='0' && f.valor5.value=='0' && f.valor6.value=='0'){
+                alert('0 ganhou!');
+
+            }else if(f.valor7.value=='0' && f.valor8.value=='0' && f.valor9.value=='0'){
+                alert('0 ganhou!');
+
+            }else if(f.valor1.value=='0' && f.valor4.value=='0' && f.valor7.value=='0'){
+                alert('0 ganhou!');
+
+            }else if(f.valor2.value=='0' && f.valor5.value=='0' && f.valor8.value=='0'){
+                alert('0 ganhou!');
+
+            }else if(f.valor3.value=='0' && f.valor6.value=='0' && f.valor9.value=='0'){
+                alert('0 ganhou!');
+
+            }else if(f.valor1.value=='0' && f.valor5.value=='0' && f.valor9.value=='0'){
+                alert('0 ganhou!');
+
+            }else if(f.valor3.value=='0' && f.valor5.value=='0' && f.valor7.value=='0'){
+                alert('0 ganhou!');
+
+            }else if(contador_empate==9){
+			    alert('Empate!');
+                window.location.reload();
+			}
+        }
+        </script>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <form name="f" border=1 
+            onmouseover="verifica_jogo(document.f);">
+            <input type="text" name="valor1" onblur="verifica_jogada(this); " />
+            <input type="text" name="valor2" onblur="verifica_jogada(this); " />
+            <input type="text" name="valor3" onblur="verifica_jogada(this); " />
+            <br />
+            <input type="text" name="valor4" onblur="verifica_jogada(this); " />
+            <input type="text" name="valor5" onblur="verifica_jogada(this); " />
+            <input type="text" name="valor6" onblur="verifica_jogada(this); " />
+            <br />
+            <input type="text" name="valor7" onblur="verifica_jogada(this); " />
+            <input type="text" name="valor8" onblur="verifica_jogada(this); " />
+            <input type="text" name="valor9" onblur="verifica_jogada(this); " />
+        </form>
+    </body>
+</html>
