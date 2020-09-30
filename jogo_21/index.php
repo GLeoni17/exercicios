@@ -103,6 +103,8 @@
                 
             }
 
+            
+
             function verifica_ganhou(){
                 if(parseInt(document.getElementById("pontuacao_1").innerHTML)>21){
                     alert("O jogador 2 ganhou.");
